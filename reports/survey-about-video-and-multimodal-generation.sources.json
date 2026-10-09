@@ -1,0 +1,202 @@
+[
+  {
+    "n": 1,
+    "id": "2104.10157",
+    "url": "https://arxiv.org/abs/2104.10157",
+    "title": "VideoGPT: Video Generation using VQ-VAE and Transformers",
+    "date": "2021-04-20",
+    "source": "arxiv"
+  },
+  {
+    "n": 2,
+    "id": "2204.03458",
+    "url": "https://arxiv.org/abs/2204.03458",
+    "title": "Video Diffusion Models",
+    "date": "2022-04-07",
+    "source": "arxiv"
+  },
+  {
+    "n": 3,
+    "id": "openai-sora-report",
+    "url": "https://openai.com/index/video-generation-models-as-world-simulators/",
+    "title": "Video generation models as world simulators",
+    "date": "2024-02-15",
+    "source": "web"
+  },
+  {
+    "n": 4,
+    "id": "2209.14792",
+    "url": "https://arxiv.org/abs/2209.14792",
+    "title": "Make-A-Video: Text-to-Video Generation without Text-Video Data",
+    "date": "n.d.",
+    "source": "arxiv"
+  },
+  {
+    "n": 5,
+    "id": "2407.19918",
+    "url": "https://arxiv.org/abs/2407.19918",
+    "title": "FreeLong: Training-Free Long Video Generation with SpectralBlend Temporal Attention",
+    "date": "2024-07-29",
+    "source": "arxiv"
+  },
+  {
+    "n": 6,
+    "id": "2412.15322",
+    "url": "https://arxiv.org/abs/2412.15322",
+    "title": "MMAudio: Taming Multimodal Joint Training for High-Quality Video-to-Audio Synthesis",
+    "date": "2024-12-19",
+    "source": "arxiv"
+  },
+  {
+    "n": 7,
+    "id": "2311.17982",
+    "url": "https://arxiv.org/abs/2311.17982",
+    "title": "VBench: Comprehensive Benchmark Suite for Video Generative Models",
+    "date": "2023-11-29",
+    "source": "arxiv"
+  },
+  {
+    "n": 8,
+    "id": "t2v-compbench-cvpr2025",
+    "url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Sun_T2V-CompBench_A_Comprehensive_Benchmark_for_Compositional_Text-to-video_Generation_CVPR_2025_paper.pdf",
+    "title": "T2V-CompBench: A Comprehensive Benchmark for Compositional Text-to-video Generation",
+    "date": "n.d.",
+    "source": "web"
+  },
+  {
+    "n": 9,
+    "id": "VIDEOPHY",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/fce2d8a485746f76aac7b5650db2679d-Paper-Conference.pdf",
+    "title": "VIDEOPHY: Evaluating Physical Commonsense in Text-to-Video Generation",
+    "date": "n.d.",
+    "source": "web"
+  },
+  {
+    "n": 10,
+    "id": "2405.03150",
+    "url": "https://arxiv.org/abs/2405.03150",
+    "title": "Video Diffusion Models: A Survey",
+    "date": "2024-11-17",
+    "source": "arxiv"
+  },
+  {
+    "n": 11,
+    "id": "2312.14125",
+    "url": "https://arxiv.org/abs/2312.14125",
+    "title": "VideoPoet: A Large Language Model for Zero-Shot Video Generation",
+    "date": "2023-12-21",
+    "source": "arxiv"
+  },
+  {
+    "n": 12,
+    "id": "2401.03048",
+    "url": "https://arxiv.org/abs/2401.03048",
+    "title": "Latte: Latent Diffusion Transformer for Video Generation",
+    "date": "2024-01-05",
+    "source": "arxiv"
+  },
+  {
+    "n": 13,
+    "id": "2211.13221",
+    "url": "https://huggingface.co/papers/2211.13221",
+    "title": "Latent Video Diffusion Models for High-Fidelity Long Video Generation",
+    "date": "2022-11-23",
+    "source": "hf-search"
+  },
+  {
+    "n": 14,
+    "id": "2503.18150",
+    "url": "https://arxiv.org/abs/2503.18150",
+    "title": "LongDiff: Training-Free Long Video Generation in One Go",
+    "date": "2025-03-23",
+    "source": "arxiv"
+  },
+  {
+    "n": 15,
+    "id": "2305.13840",
+    "url": "https://huggingface.co/papers/2305.13840",
+    "title": "Control-A-Video: Controllable Text-to-Video Generation with Diffusion Models",
+    "date": "2023-05-23",
+    "source": "hf-search"
+  },
+  {
+    "n": 16,
+    "id": "2312.03641",
+    "url": "https://arxiv.org/abs/2312.03641",
+    "title": "MotionCtrl: A Unified and Flexible Motion Controller for Video Generation",
+    "date": "2023-12-06",
+    "source": "arxiv"
+  },
+  {
+    "n": 17,
+    "id": "2501.00103",
+    "url": "https://arxiv.org/abs/2501.00103",
+    "title": "LTX-Video: Realtime Video Latent Diffusion",
+    "date": "2024-12-30",
+    "source": "arxiv"
+  },
+  {
+    "n": 18,
+    "id": "2507.03745",
+    "url": "https://arxiv.org/html/2507.03745v2",
+    "title": "StreamDiT: Real-Time Streaming Text-to-Video Generation",
+    "date": "n.d.",
+    "source": "web"
+  },
+  {
+    "n": 19,
+    "id": "2506.10639",
+    "url": "https://arxiv.org/abs/2506.10639",
+    "title": "GigaVideo-1: Advancing Video Generation via Automatic Feedback with 4 GPU-Hours Fine-Tuning",
+    "date": "2025-06-12",
+    "source": "arxiv"
+  },
+  {
+    "n": 20,
+    "id": "2412.15220",
+    "url": "https://arxiv.org/abs/2412.15220",
+    "title": "SyncFlow: Toward Temporally Aligned Joint Audio-Video Generation from Text",
+    "date": "2024-12-03",
+    "source": "arxiv"
+  },
+  {
+    "n": 21,
+    "id": "2512.21094",
+    "url": "https://huggingface.co/papers/2512.21094",
+    "title": "T2AV-Compass: Towards Unified Evaluation for Text-to-Audio-Video Generation",
+    "date": "2025-12-24",
+    "source": "hf-search"
+  },
+  {
+    "n": 22,
+    "id": "2311.01813",
+    "url": "https://arxiv.org/abs/2311.01813",
+    "title": "FETV: A Benchmark for Fine-Grained Evaluation of Open-Domain Text-to-Video Generation",
+    "date": "n.d.",
+    "source": "arxiv"
+  },
+  {
+    "n": 23,
+    "id": "2411.13503",
+    "url": "https://huggingface.co/papers/2411.13503",
+    "title": "VBench++: Comprehensive and Versatile Benchmark Suite for Video Generative Models",
+    "date": "2024-11-20",
+    "source": "hf-search"
+  },
+  {
+    "n": 24,
+    "id": "T2VSafetyBench",
+    "url": "http://dl.acm.org/doi/10.5555/3737916.3739955",
+    "title": "T2VSafetyBench: evaluating the safety of text-to-video generative models",
+    "date": "2024-12-10",
+    "source": "web"
+  },
+  {
+    "n": 25,
+    "id": "pmlr-v267-meng25c",
+    "url": "https://proceedings.mlr.press/v267/meng25c.html",
+    "title": "Towards World Simulator: Crafting Physical Commonsense-Based Benchmark for Video Generation",
+    "date": "2025-10-06",
+    "source": "web"
+  }
+]

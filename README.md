@@ -107,3 +107,64 @@ Kết quả nằm ở `reports/survey-about-world-model.md` cùng `.sources.json
 - Mỗi lần chạy tốn token LLM và thời gian sandbox. `tokens` trong `meta.json` chỉ đếm tin nhắn của lead, chưa gồm subagent, nên chi phí thật cao hơn. `open_sandbox()` luôn dừng và xóa sandbox khi kết thúc, kể cả khi lỗi. Đừng bỏ qua nó.
 - **Không đưa bí mật vào sandbox.** Sandbox không ngăn được prompt injection hay việc đẩy dữ liệu ra mạng; một trang web độc hại có thể khiến agent chạy lệnh bên trong sandbox. Vì vậy mọi công cụ gọi mạng và mọi khóa ở lại phía host.
 - Nội dung lấy từ web là **dữ liệu không đáng tin**: agent không được làm theo chỉ dẫn nằm trong đó.
+
+## 8. Bài nộp: cách chạy và đọc kết quả
+
+Sinh viên: Nguyễn Hải Nam (2A202602476). Năm báo cáo trong `reports/` được sinh bằng `gpt-6-luna` (OpenAI), sandbox Docker.
+
+### Cài đặt và chạy
+
+```bash
+python -m venv .venv
+source .venv/bin/activate                  # Windows PowerShell: .\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+cp .env.example .env                       # Windows: Copy-Item .env.example .env
+```
+
+Điền `.env`: `LAB_MODEL=openai:gpt-6-luna`, `OPENAI_API_KEY`, `EXA_API_KEY`, và `DAYTONA_API_KEY` (hoặc `SANDBOX=docker`
+khi dùng Docker cục bộ; Docker Desktop phải đang chạy). Sau đó:
+
+```bash
+python tools.py                                   # thử 5 công cụ nguồn dữ liệu, không cần LLM
+python research.py "survey about world model"     # một chủ đề, khoảng 5-15 phút
+```
+
+### Đọc thư mục `reports/`
+
+Mỗi chủ đề có ba tệp, cùng tên `<slug>`:
+
+| Tệp | Nội dung |
+|---|---|
+| `<slug>.md` | Báo cáo theo `REPORT_TEMPLATE.md`; `## References` do `finalize_citations.py` sinh trong sandbox |
+| `<slug>.sources.json` | Các nguồn được trích: `{n, id, url, title, date, source}` |
+| `<slug>.meta.json` | Model, thời gian, `subagent_calls` (số lần lead gọi `task`), số lần gọi từng tool, token của lead, `n_sources`, `source_families` |
+
+| Chủ đề | Giao việc | Nguồn | Họ nguồn |
+|---|---|---|---|
+| survey about world model | 5 | 22 | hf-daily, hf-search, web |
+| survey about reinforcement learning for LLM reasoning | 7 | 20 | arxiv, hf-daily, hf-search, web |
+| survey about LLM agents and tool use | 5 | 23 | arxiv, hf-daily, hf-search, web |
+| survey about video and multimodal generation | 7 | 25 | arxiv, hf-search, web |
+| survey about efficient inference and small language models | 6 | 22 | arxiv, hf-daily, hf-search, web |
+
+### Kiểm tra
+
+```bash
+python self_check.py                                                  # READY to submit
+python check_citations.py reports/<slug>.md reports/<slug>.sources.json
+pip install -r requirements-dev.txt && python -m pytest -q            # 36 test offline: không mạng, không LLM
+```
+
+### Những điểm đáng chú ý trong cài đặt
+
+- **arXiv:** các researcher chạy song song nên khoảng cách 3 giây được giữ bằng một khóa luồng. Khi arXiv vẫn trả 429
+  sau mọi lần retry, `arxiv_search` tạm ngừng 5 phút và trả lỗi ngay để researcher đổi nguồn.
+- **Exa:** phát hiện cờ rate limit trong `result._meta` (HTTP 200) và retry. Khóa được che trong mọi chuỗi `ERROR`.
+  `Retry-After` dài hơn 10 phút (hết hạn mức) thì báo lỗi ngay thay vì chờ vô ích.
+- **Timeout cho LLM:** `model.py` tạo client OpenAI không có timeout, nên một kết nối treo có thể chặn cả lần chạy (đã
+  gặp khi chạy thật). `research.py` gắn timeout 180 giây và 2 lần retry cho mỗi request.
+- **Validator chặt hơn GUIDE:** ngoài 6 quy tắc trích dẫn, `check_citations.py` còn kiểm tra nhãn họ nguồn khớp URL
+  (`arxiv` cần `arxiv.org/abs/`, `hf-*` cần `huggingface.co/papers/`) và cấu trúc của template (đủ các phần, 3-6 chủ đề,
+  tiêu đề nằm riêng dòng). Agent phải tự sửa báo cáo cho tới khi validator in OK; không báo cáo nào được sửa tay.
+- **Giới hạn:** lead có 150 lần gọi model và 300 lần gọi tool mỗi lần chạy (kèm `thread_limit`); mỗi subagent có 40 và
+  60; `recursion_limit` của lead là 1000.

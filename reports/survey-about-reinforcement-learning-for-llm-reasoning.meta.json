@@ -1,0 +1,26 @@
+{
+  "topic": "survey about reinforcement learning for LLM reasoning",
+  "model": "gpt-6-luna",
+  "elapsed_s": 590.9,
+  "subagent_calls": 7,
+  "tool_calls": {
+    "write_todos": 4,
+    "task": 7,
+    "ls": 2,
+    "read_file": 10,
+    "write_file": 2,
+    "execute": 8,
+    "edit_file": 9
+  },
+  "tokens": {
+    "input": 820503,
+    "output": 15354
+  },
+  "n_sources": 20,
+  "source_families": [
+    "arxiv",
+    "hf-daily",
+    "hf-search",
+    "web"
+  ]
+}

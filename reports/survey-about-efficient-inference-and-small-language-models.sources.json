@@ -1,0 +1,178 @@
+[
+  {
+    "n": 1,
+    "id": "2409.15790",
+    "url": "https://arxiv.org/abs/2409.15790",
+    "title": "Small Language Models:Survey, Measurements, and Insights",
+    "date": "2025-02-26",
+    "source": "arxiv"
+  },
+  {
+    "n": 2,
+    "id": "3768165",
+    "url": "https://doi.org/10.1145%2F3768165",
+    "title": "A Comprehensive Survey of Small Language Models in the Era of Large Language Models: Techniques, Enhancements, Applications, Collaboration with LLMs, and Trustworthiness",
+    "date": "2025-11-24",
+    "source": "web"
+  },
+  {
+    "n": 3,
+    "id": "1910.01108",
+    "url": "https://arxiv.org/abs/1910.01108",
+    "title": "DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter",
+    "date": "2019-10-02",
+    "source": "arxiv"
+  },
+  {
+    "n": 4,
+    "id": "2203.15556",
+    "url": "https://arxiv.org/abs/2203.15556",
+    "title": "Training Compute-Optimal Large Language Models",
+    "date": "2022-03-29",
+    "source": "arxiv"
+  },
+  {
+    "n": 5,
+    "id": "2309.06180",
+    "url": "https://arxiv.org/abs/2309.06180",
+    "title": "Efficient Memory Management for Large Language Model Serving with PagedAttention",
+    "date": "2023-09-12",
+    "source": "arxiv"
+  },
+  {
+    "n": 6,
+    "id": "2410.06916",
+    "url": "https://huggingface.co/papers/2410.06916",
+    "title": "SWIFT: On-the-Fly Self-Speculative Decoding for LLM Inference Acceleration",
+    "date": "2024-10-09",
+    "source": "hf-search"
+  },
+  {
+    "n": 7,
+    "id": "2410.00161",
+    "url": "https://arxiv.org/abs/2410.00161",
+    "title": "KV-Compress: Paged KV-Cache Compression with Variable Compression Rates per Attention Head",
+    "date": "2024-09-30",
+    "source": "arxiv"
+  },
+  {
+    "n": 8,
+    "id": "2502.02737",
+    "url": "https://arxiv.org/abs/2502.02737",
+    "title": "SmolLM2: When Smol Goes Big -- Data-Centric Training of a Small Language Model",
+    "date": "2025-02-04",
+    "source": "arxiv"
+  },
+  {
+    "n": 9,
+    "id": "2503.01743",
+    "url": "https://arxiv.org/abs/2503.01743",
+    "title": "Phi-4-Mini Technical Report: Compact yet Powerful Multimodal Language Models via Mixture-of-LoRAs",
+    "date": "2025-03-03",
+    "source": "arxiv"
+  },
+  {
+    "n": 10,
+    "id": "bench360",
+    "url": "https://arxiv.org/html/2511.16682v1",
+    "title": "Bench360—Benchmarking Local LLM inference from 360°",
+    "date": "n.d.",
+    "source": "web"
+  },
+  {
+    "n": 11,
+    "id": "gchswg1w3mm",
+    "url": "https://exa.ai/library/publication/gchswg1w3mm",
+    "title": "Efficiency Pentathlon: A Standardized Arena for Efficiency Evaluation",
+    "date": "2023-07-19",
+    "source": "web"
+  },
+  {
+    "n": 12,
+    "id": "2610.09639",
+    "url": "https://huggingface.co/papers/2610.09639",
+    "title": "On-Policy Distillation Teaches New Skills but Not New Knowledge",
+    "date": "2026-10-07",
+    "source": "hf-daily"
+  },
+  {
+    "n": 13,
+    "id": "2305.17888",
+    "url": "https://arxiv.org/abs/2305.17888",
+    "title": "LLM-QAT: Data-Free Quantization Aware Training for Large Language Models",
+    "date": "2023-05-29",
+    "source": "arxiv"
+  },
+  {
+    "n": 14,
+    "id": "2502.04420",
+    "url": "https://huggingface.co/papers/2502.04420",
+    "title": "KVTuner: Sensitivity-Aware Layer-Wise Mixed-Precision KV Cache Quantization for Efficient and Nearly Lossless LLM Inference",
+    "date": "2025-02-06",
+    "source": "hf-search"
+  },
+  {
+    "n": 15,
+    "id": "2406.02532",
+    "url": "https://huggingface.co/papers/2406.02532",
+    "title": "SpecExec: Massively Parallel Speculative Decoding for Interactive LLM Inference on Consumer Devices",
+    "date": "2024-06-04",
+    "source": "hf-search"
+  },
+  {
+    "n": 16,
+    "id": "2502.10424",
+    "url": "https://huggingface.co/papers/2502.10424",
+    "title": "QuantSpec: Self-Speculative Decoding with Hierarchical Quantized KV Cache",
+    "date": "2025-02-05",
+    "source": "hf-search"
+  },
+  {
+    "n": 17,
+    "id": "2408.00008",
+    "url": "https://huggingface.co/papers/2408.00008",
+    "title": "ScaleLLM: A Resource-Frugal LLM Serving Framework by Optimizing End-to-End Efficiency",
+    "date": "2024-07-23",
+    "source": "hf-search"
+  },
+  {
+    "n": 18,
+    "id": "2412.08905",
+    "url": "https://arxiv.org/abs/2412.08905",
+    "title": "Phi-4 Technical Report",
+    "date": "2024-12-12",
+    "source": "arxiv"
+  },
+  {
+    "n": 19,
+    "id": "2504.21318",
+    "url": "https://arxiv.org/abs/2504.21318",
+    "title": "Phi-4-reasoning Technical Report",
+    "date": "2025-04-30",
+    "source": "arxiv"
+  },
+  {
+    "n": 20,
+    "id": "2511.06719",
+    "url": "https://arxiv.org/abs/2511.06719",
+    "title": "MobileLLM-Pro Technical Report",
+    "date": "2025-11-10",
+    "source": "arxiv"
+  },
+  {
+    "n": 21,
+    "id": "2211.09110",
+    "url": "https://arxiv.org/abs/2211.09110",
+    "title": "Holistic Evaluation of Language Models",
+    "date": "2023-10-01",
+    "source": "arxiv"
+  },
+  {
+    "n": 22,
+    "id": "2402.14992",
+    "url": "https://arxiv.org/abs/2402.14992",
+    "title": "tinyBenchmarks: evaluating LLMs with fewer examples",
+    "date": "2024-05-26",
+    "source": "arxiv"
+  }
+]

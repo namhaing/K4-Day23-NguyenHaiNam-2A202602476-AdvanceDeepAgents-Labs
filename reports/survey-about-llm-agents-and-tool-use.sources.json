@@ -1,0 +1,186 @@
+[
+  {
+    "n": 1,
+    "id": "2210.03629",
+    "url": "https://arxiv.org/abs/2210.03629",
+    "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+    "date": "2023-03-10",
+    "source": "arxiv"
+  },
+  {
+    "n": 2,
+    "id": "2302.04761",
+    "url": "https://arxiv.org/abs/2302.04761",
+    "title": "Toolformer: Language Models Can Teach Themselves to Use Tools",
+    "date": "2023-02-09",
+    "source": "arxiv"
+  },
+  {
+    "n": 3,
+    "id": "2303.11366",
+    "url": "https://arxiv.org/abs/2303.11366",
+    "title": "Reflexion: Language Agents with Verbal Reinforcement Learning",
+    "date": "2023-03-20",
+    "source": "arxiv"
+  },
+  {
+    "n": 4,
+    "id": "2304.08244",
+    "url": "https://arxiv.org/abs/2304.08244",
+    "title": "API-Bank: A Comprehensive Benchmark for Tool-Augmented LLMs",
+    "date": "2023-04-14",
+    "source": "arxiv"
+  },
+  {
+    "n": 5,
+    "id": "2307.16789",
+    "url": "https://huggingface.co/papers/2307.16789",
+    "title": "ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs",
+    "date": "2023-07-31",
+    "source": "hf-search"
+  },
+  {
+    "n": 6,
+    "id": "2401.13178",
+    "url": "https://arxiv.org/abs/2401.13178",
+    "title": "AgentBoard: An Analytical Evaluation Board of Multi-turn LLM Agents",
+    "date": "2024-01-24",
+    "source": "arxiv"
+  },
+  {
+    "n": 7,
+    "id": "2406.12045",
+    "url": "https://arxiv.org/abs/2406.12045",
+    "title": "τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains",
+    "date": "n.d.",
+    "source": "arxiv"
+  },
+  {
+    "n": 8,
+    "id": "2406.13352",
+    "url": "https://arxiv.org/abs/2406.13352",
+    "title": "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents",
+    "date": "n.d.",
+    "source": "arxiv"
+  },
+  {
+    "n": 9,
+    "id": "2511.02734",
+    "url": "https://arxiv.org/html/2511.02734v3",
+    "title": "CostBench: Evaluating Multi-Turn Cost-Optimal Planning and Adaptation in Dynamic Environments for LLM Tool-Use Agents",
+    "date": "n.d.",
+    "source": "web"
+  },
+  {
+    "n": 10,
+    "id": "2406.05804",
+    "url": "https://arxiv.org/html/2406.05804",
+    "title": "A Review of Prominent Paradigms for LLM-Based Agents: Tool Use (Including RAG), Planning, and Feedback Learning",
+    "date": "n.d.",
+    "source": "web"
+  },
+  {
+    "n": 11,
+    "id": "2507.21504",
+    "url": "https://arxiv.org/html/2507.21504v1",
+    "title": "Evaluation and Benchmarking of LLM Agents: A Survey",
+    "date": "n.d.",
+    "source": "web"
+  },
+  {
+    "n": 12,
+    "id": "2402.02716",
+    "url": "https://arxiv.org/abs/2402.02716",
+    "title": "Understanding the planning of LLM agents: A survey",
+    "date": "2024-02-05",
+    "source": "arxiv"
+  },
+  {
+    "n": 13,
+    "id": "2407.00121",
+    "url": "https://huggingface.co/papers/2407.00121",
+    "title": "Granite-Function Calling Model: Introducing Function Calling Abilities via Multi-task Learning of Granular Tasks",
+    "date": "2024-06-27",
+    "source": "hf-search"
+  },
+  {
+    "n": 14,
+    "id": "2409.00920",
+    "url": "https://huggingface.co/papers/2409.00920",
+    "title": "ToolACE: Winning the Points of LLM Function Calling",
+    "date": "2024-09-02",
+    "source": "hf-search"
+  },
+  {
+    "n": 15,
+    "id": "2406.03807",
+    "url": "https://huggingface.co/papers/2406.03807",
+    "title": "Tool-Planner: Dynamic Solution Tree Planning for Large Language Model with Tool Clustering",
+    "date": "2024-06-06",
+    "source": "hf-search"
+  },
+  {
+    "n": 16,
+    "id": "2508.15214",
+    "url": "https://huggingface.co/papers/2508.15214",
+    "title": "Self-Guided Function Calling in Large Language Models via Stepwise Experience Recall",
+    "date": "2025-08-21",
+    "source": "hf-search"
+  },
+  {
+    "n": 17,
+    "id": "2412.20145",
+    "url": "https://arxiv.org/abs/2412.20145",
+    "title": "Efficient Multi-Agent Collaboration with Tool Use for Online Planning in Complex Table Question Answering",
+    "date": "2024-12-28",
+    "source": "arxiv"
+  },
+  {
+    "n": 18,
+    "id": "2506.12928",
+    "url": "https://huggingface.co/papers/2506.12928",
+    "title": "Scaling Test-time Compute for LLM Agents",
+    "date": "2025-06-15",
+    "source": "hf-daily"
+  },
+  {
+    "n": 19,
+    "id": "2504.06260",
+    "url": "https://arxiv.org/abs/2504.06260",
+    "title": "FEABench: Evaluating Language Models on Multiphysics Reasoning Ability",
+    "date": "2025-04-08",
+    "source": "arxiv"
+  },
+  {
+    "n": 20,
+    "id": "2409.00557",
+    "url": "https://arxiv.org/abs/2409.00557",
+    "title": "Learning to Ask: When LLM Agents Meet Unclear Instruction",
+    "date": "2024-08-31",
+    "source": "arxiv"
+  },
+  {
+    "n": 21,
+    "id": "2506.13977",
+    "url": "https://huggingface.co/papers/2506.13977",
+    "title": "CRITICTOOL: Evaluating Self-Critique Capabilities of Large Language Models in Tool-Calling Error Scenarios",
+    "date": "2025-06-11",
+    "source": "hf-daily"
+  },
+  {
+    "n": 22,
+    "id": "2511.19900",
+    "url": "https://huggingface.co/papers/2511.19900",
+    "title": "Agent0-VL: Exploring Self-Evolving Agent for Tool-Integrated Vision-Language Reasoning",
+    "date": "2025-11-25",
+    "source": "hf-daily"
+  },
+  {
+    "n": 23,
+    "id": "2511.19663",
+    "url": "https://huggingface.co/papers/2511.19663",
+    "title": "Fara-7B: An Efficient Agentic Model for Computer Use",
+    "date": "2025-11-24",
+    "source": "hf-daily"
+  }
+]

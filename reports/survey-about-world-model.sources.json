@@ -1,0 +1,178 @@
+[
+  {
+    "n": 1,
+    "id": "1803.10122",
+    "url": "https://arxiv.org/abs/1803.10122",
+    "title": "World Models",
+    "date": "2018-03-27",
+    "source": "web"
+  },
+  {
+    "n": 2,
+    "id": "lecun-path-towards-autonomous-machine-intelligence",
+    "url": "https://marklovestech.com/pdfs/2022-lecun-path-towards-autonomous-machine-intelligence.pdf",
+    "title": "A Path Towards Autonomous Machine Intelligence",
+    "date": "2022-06-27",
+    "source": "web"
+  },
+  {
+    "n": 3,
+    "id": "2507.21513",
+    "url": "https://arxiv.org/html/2507.21513",
+    "title": "What Does it Mean for a Neural Network to Learn a “World Model”?",
+    "date": "2025-07-29",
+    "source": "web"
+  },
+  {
+    "n": 4,
+    "id": "1811.04551",
+    "url": "https://arxiv.org/abs/1811.04551",
+    "title": "Learning Latent Dynamics for Planning from Pixels",
+    "date": "n.d.",
+    "source": "web"
+  },
+  {
+    "n": 5,
+    "id": "2301.04104",
+    "url": "https://arxiv.org/abs/2301.04104",
+    "title": "Mastering Diverse Domains through World Models",
+    "date": "n.d.",
+    "source": "web"
+  },
+  {
+    "n": 6,
+    "id": "2402.15391",
+    "url": "https://huggingface.co/papers/2402.15391",
+    "title": "Genie: Generative Interactive Environments",
+    "date": "2024-02-23",
+    "source": "hf-search"
+  },
+  {
+    "n": 7,
+    "id": "2405.12399",
+    "url": "https://arxiv.org/abs/2405.12399",
+    "title": "Diffusion for World Modeling: Visual Details Matter in Atari",
+    "date": "n.d.",
+    "source": "web"
+  },
+  {
+    "n": 8,
+    "id": "2502.20694",
+    "url": "https://arxiv.org/html/2502.20694",
+    "title": "WorldModelBench: Judging Video Generation Models As World Models",
+    "date": "2025-02-28",
+    "source": "web"
+  },
+  {
+    "n": 9,
+    "id": "2602.08971",
+    "url": "https://arxiv.org/html/2602.08971v1",
+    "title": "WorldArena: A Unified Benchmark for Evaluating Perception and Functional Utility of Embodied World Models",
+    "date": "n.d.",
+    "source": "web"
+  },
+  {
+    "n": 10,
+    "id": "2506.04363",
+    "url": "https://arxiv.org/html/2506.04363",
+    "title": "WorldPrediction: A Benchmark for High-level World Modeling and Long-horizon Procedural Planning",
+    "date": "n.d.",
+    "source": "web"
+  },
+  {
+    "n": 11,
+    "id": "2605.25874",
+    "url": "https://arxiv.org/html/2605.25874v1",
+    "title": "WBench: A Comprehensive Multi-turn Benchmark for Interactive World Model Evaluation",
+    "date": "2026-05-25",
+    "source": "web"
+  },
+  {
+    "n": 12,
+    "id": "2301.08243",
+    "url": "https://arxiv.org/abs/2301.08243",
+    "title": "Self-Supervised Learning from Images with a Joint-Embedding Predictive Architecture",
+    "date": "2023-04-13",
+    "source": "web"
+  },
+  {
+    "n": 13,
+    "id": "1912.01603",
+    "url": "https://huggingface.co/papers/1912.01603",
+    "title": "Dream to Control: Learning Behaviors by Latent Imagination",
+    "date": "2019-12-03",
+    "source": "hf-search"
+  },
+  {
+    "n": 14,
+    "id": "2309.17080",
+    "url": "https://huggingface.co/papers/2309.17080",
+    "title": "GAIA-1: A Generative World Model for Autonomous Driving",
+    "date": "2023-09-29",
+    "source": "hf-search"
+  },
+  {
+    "n": 15,
+    "id": "2402.15391",
+    "url": "https://arxiv.org/html/2402.15391v1",
+    "title": "Genie: Generative Interactive Environments",
+    "date": "2024-02-23",
+    "source": "web"
+  },
+  {
+    "n": 16,
+    "id": "genie-2",
+    "url": "https://deepmind.google/blog/genie-2-a-large-scale-foundation-world-model/",
+    "title": "Genie 2: A large-scale foundation world model",
+    "date": "2024-12-04",
+    "source": "web"
+  },
+  {
+    "n": 17,
+    "id": "2506.23135",
+    "url": "https://arxiv.org/abs/2506.23135",
+    "title": "RoboScape: Physics-informed Embodied World Model",
+    "date": "2025-06-29",
+    "source": "web"
+  },
+  {
+    "n": 18,
+    "id": "2509.21790",
+    "url": "https://arxiv.org/html/2509.21790",
+    "title": "LongScape: Advancing Long-Horizon Embodied World Models with Context-Aware MoE",
+    "date": "n.d.",
+    "source": "web"
+  },
+  {
+    "n": 19,
+    "id": "2508.05635",
+    "url": "https://arxiv.org/html/2508.05635",
+    "title": "Genie Envisioner: A Unified World Foundation Platform for Robotic Manipulation",
+    "date": "n.d.",
+    "source": "web"
+  },
+  {
+    "n": 20,
+    "id": "2610.12299",
+    "url": "https://huggingface.co/papers/2610.12299",
+    "title": "Multi-Agent Egocentric World Model with Fine-Grained Embodied Interaction",
+    "date": "2026-10-08",
+    "source": "hf-daily"
+  },
+  {
+    "n": 21,
+    "id": "2504.00983",
+    "url": "https://arxiv.org/html/2504.00983v2",
+    "title": "WorldScore: A Unified Evaluation Benchmark for World Generation",
+    "date": "n.d.",
+    "source": "web"
+  },
+  {
+    "n": 22,
+    "id": "2601.21282",
+    "url": "https://arxiv.org/abs/2601.21282",
+    "title": "WorldBench: Benchmarking Physical Understanding of World Foundation Models",
+    "date": "n.d.",
+    "source": "web"
+  }
+]
