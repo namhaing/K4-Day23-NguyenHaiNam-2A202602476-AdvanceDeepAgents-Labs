@@ -152,7 +152,7 @@ Mỗi chủ đề có ba tệp, cùng tên `<slug>`:
 ```bash
 python self_check.py                                                  # READY to submit
 python check_citations.py reports/<slug>.md reports/<slug>.sources.json
-pip install -r requirements-dev.txt && python -m pytest -q            # 36 test offline: không mạng, không LLM
+pip install -r requirements-dev.txt && python -m pytest -q            # 43 test offline: không mạng, không LLM
 ```
 
 ### Những điểm đáng chú ý trong cài đặt
@@ -168,3 +168,17 @@ pip install -r requirements-dev.txt && python -m pytest -q            # 36 test 
   tiêu đề nằm riêng dòng). Agent phải tự sửa báo cáo cho tới khi validator in OK; không báo cáo nào được sửa tay.
 - **Giới hạn:** lead có 150 lần gọi model và 300 lần gọi tool mỗi lần chạy (kèm `thread_limit`); mỗi subagent có 40 và
   60; `recursion_limit` của lead là 1000.
+
+### Mở rộng (GUIDE mục 6)
+
+| Tính năng | Cách bật | Ghi chú |
+|---|---|---|
+| Giới hạn theo thread | luôn bật | `thread_limit` cho lead, bên cạnh `run_limit`: vẫn đúng khi chạy tiếp từ checkpoint |
+| Ngân sách token dùng chung | luôn bật; `LAB_TOKEN_BUDGET` (mặc định 3 000 000) | Một bộ đếm có khóa luồng cho lead và mọi subagent chạy song song: cảnh báo ở 80 %, dừng êm ở 100 %. Mỗi lần chạy subagent còn bị chặn ở 600 000 token. Tổng thật được ghi vào `meta.json` ở trường `tokens_all_agents` |
+| Bộ nhớ dài hạn | `LAB_MEMORY=1` | `/memory/AGENTS.md` được định tuyến (`CompositeBackend`) về thư mục `memory/` trên host và tồn tại giữa các lần chạy. Chỉ lead được ghi (subagent bị `FilesystemPermission` chặn), và chỉ ghi bài học về quy trình. Tắt mặc định vì nội dung web có thể "cài" chỉ dẫn vào prompt của các lần chạy sau; `memory/` nằm trong `.gitignore` |
+| Nén ngữ cảnh chủ động | luôn bật | Lead có tool `compact_conversation` và được gợi ý dùng sau khi gộp xong `sources.json` |
+
+Kiểm chứng thật (chủ đề thử "survey about mixture of experts language models", không nằm trong `reports/`): lead dùng
+651 nghìn token nhưng tổng của mọi agent là 1,30 triệu; lead tự ghi một bài học vào `memory/AGENTS.md`; với
+`LAB_TOKEN_BUDGET=150000` agent cảnh báo ở 134 nghìn, dừng êm, thoát mã 1 và không ghi báo cáo nào. Năm báo cáo trong
+`reports/` được sinh trước khi thêm phần mở rộng, nên `meta.json` của chúng chưa có trường `tokens_all_agents`.

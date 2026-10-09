@@ -10,7 +10,8 @@ import time
 from collections import Counter
 from pathlib import Path
 
-from agents import FINALIZER_PATH, REPORT_PATH, SOURCES_PATH, VALIDATOR_PATH, WORKDIR, build_lead_agent
+from agents import (FINALIZER_PATH, REPORT_PATH, SOURCES_PATH, VALIDATOR_PATH, WORKDIR, build_lead_agent,
+                    make_budget)
 from model import make_model
 from sandbox import download, open_sandbox, upload
 
@@ -56,7 +57,7 @@ def summarize(messages, elapsed, model_name):
             "tool_calls": dict(tool_calls), "tokens": tokens}
 
 
-def save_outputs(backend, topic, messages, elapsed, model_name, reports_dir=REPORTS):
+def save_outputs(backend, topic, messages, elapsed, model_name, reports_dir=REPORTS, extra_meta=None):
     """Download the report from the sandbox and write the three files into reports_dir. Return the report path.
 
     A missing/empty report or a missing/invalid sources.json raises RuntimeError and writes NOTHING: a failed run must
@@ -74,7 +75,7 @@ def save_outputs(backend, topic, messages, elapsed, model_name, reports_dir=REPO
         raise RuntimeError("sources.json is not a non-empty JSON list")
 
     slug = slugify(topic)
-    meta = {"topic": topic, **summarize(messages, elapsed, model_name), "n_sources": len(sources),
+    meta = {"topic": topic, **summarize(messages, elapsed, model_name), **(extra_meta or {}), "n_sources": len(sources),
             "source_families": sorted({s["source"] for s in sources if isinstance(s, dict) and s.get("source")})}
     reports_dir.mkdir(parents=True, exist_ok=True)
     (reports_dir / f"{slug}.sources.json").write_text(json.dumps(sources, ensure_ascii=False, indent=2),
@@ -108,12 +109,13 @@ def main(topic):
         print('usage: python research.py "<topic>"', file=sys.stderr)
         return 2
     model = with_request_timeout(make_model())
+    budget = make_budget()                       # one token counter for the lead and every subagent
     start = time.monotonic()
     with open_sandbox() as backend:              # the sandbox is always stopped and removed, even on errors
         backend.execute(f"mkdir -p {WORKDIR}/research/notes {WORKDIR}/report")
         upload(backend, {VALIDATOR_PATH: VALIDATOR_SOURCE.read_bytes(), FINALIZER_PATH: FINALIZER_SOURCE.read_bytes()})
         log(f"sandbox ready; lead agent ({model_name_of(model)}) working on: {topic}")
-        agent = build_lead_agent(backend, model)
+        agent = build_lead_agent(backend, model, budget)
         try:
             result = agent.invoke({"messages": [{"role": "user", "content": build_prompt(topic)}]},
                                   config={"recursion_limit": RECURSION_LIMIT})
@@ -121,7 +123,8 @@ def main(topic):
             print(f"FAILED: agent stopped: {type(exc).__name__}: {exc}", file=sys.stderr)
             return 1
         try:
-            path = save_outputs(backend, topic, result["messages"], time.monotonic() - start, model_name_of(model))
+            path = save_outputs(backend, topic, result["messages"], time.monotonic() - start, model_name_of(model),
+                                extra_meta={"tokens_all_agents": dict(budget.used)})
         except RuntimeError as exc:
             print(f"FAILED: {exc}", file=sys.stderr)
             return 1
